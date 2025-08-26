@@ -2,8 +2,8 @@ import Image from 'next/image';
 
 const Storage = () => {
   return (
-    <section className='bg-[url("/images/background/storage.png")] bg-cover bg-center bg-no-repeat'>
-      <div className='container py-32 mx-auto flex items-stretch justify-between gap-16 min-h-[700px] h-screen relative z-0'>
+    <section className='bg-[url("/images/background/storage.png")] bg-cover bg-center bg-no-repeat px-4'>
+      <div className='container py-32 mx-auto flex items-stretch justify-between gap-16 min-h-[900px] h-screen relative z-0'>
         <div className='flex flex-col justify-start font-neue-machina text-4xl bg-clip-text text-transparent bg-gradient-to-r from-[#9CC1C1] to-[#D0DBDB] font-black flex-1 relative z-20'>
           The First Physical Key to Molecular Storage
         </div>

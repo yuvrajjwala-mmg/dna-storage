@@ -7,8 +7,8 @@ import Autoplay from 'embla-carousel-autoplay';
 
 const Archive = () => {
   return (
-    <section className='bg-[url("/images/background/archive.png")] bg-cover bg-center bg-no-repeat'>
-      <div className='container py-32 mx-auto flex flex-col items-stretch justify-between gap-16 h-[1150px] relative'>
+    <section className='bg-[url("/images/background/archive.png")] bg-cover bg-center bg-no-repeat px-4'>
+      <div className='container py-32 mx-auto flex flex-col items-stretch justify-between gap-16 min-h-[900px] h-screen relative'>
         <div className='bg-clip-text text-transparent bg-gradient-to-r from-[#9CC1C1] to-[#D0DBDB] text-8xl font-black font-neue-machina flex-1'>
           <div className='text-left'>The archive for the</div>
           <div className='text-right'>next thousand years</div>

@@ -2,8 +2,8 @@ import { Button } from '@/components/ui/button';
 
 const Contact = () => {
   return (
-    <section className='bg-[url("/images/background/contact.png")] bg-cover bg-center bg-no-repeat'>
-      <div className='container py-32 mx-auto flex flex-col justify-center items-end gap-8 min-h-[700px] h-screen'>
+    <section className='bg-[url("/images/background/contact.png")] bg-cover bg-center bg-no-repeat px-4'>
+      <div className='container py-32 mx-auto flex flex-col justify-center items-end gap-8 min-h-[900px] h-screen'>
         <div className='bg-clip-text text-transparent bg-gradient-to-r from-[#9CC1C1] to-[#D0DBDB] text-end text-8xl font-black font-neue-machina'>
           The internet
           <br />

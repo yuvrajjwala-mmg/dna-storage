@@ -6,16 +6,16 @@ import Link from 'next/link';
 
 const Hero = () => {
   return (
-    <section className='bg-[url("/images/background/hero.png")] bg-cover bg-center bg-no-repeat relative z-0 min-h-[700px] h-screen flex flex-col items-stretch'>
+    <section className='bg-[url("/images/background/hero.png")] bg-cover bg-center bg-no-repeat relative z-0 min-h-[900px] h-screen flex flex-col items-stretch'>
       <Image
         src='/images/hero.gif'
         alt='hero'
         width={1000}
         height={1000}
-        className='absolute w-screen h-screen object-center object-cover z-10'
+        className='absolute w-full h-full object-center object-cover z-10'
       />
       <Navbar />
-      <div className='py-16 flex-1 flex flex-col items-center'>
+      <div className='py-16 flex-1 flex flex-col items-center px-4'>
         <div className='container mx-auto flex flex-col items-stretch justify-between gap-16 relative z-20 flex-1 p-10'>
           <div className='absolute top-0 left-0 border-t border-l border-[9CC1C1] w-8 h-8' />
           <div className='text-6xl font-bold text-[#9CC1C1] font-neue-machina'>

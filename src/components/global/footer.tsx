@@ -5,7 +5,7 @@ import Link from 'next/link';
 const Footer = () => {
   return (
     <footer className='bg-gradient-to-b from-[#000000] to-[#101516]'>
-      <div className='container py-32 mx-auto flex flex-col items-stretch justify-center gap-16 min-h-[700px] h-screen'>
+      <div className='container py-32 mx-auto flex flex-col items-stretch justify-center gap-16 min-h-[900px] h-screen'>
         <div className='bg-clip-text text-transparent bg-gradient-to-r from-[#9CC1C1] to-[#D0DBDB] text-center text-9xl font-black font-neue-machina'>
           DATA THAT
           <br />

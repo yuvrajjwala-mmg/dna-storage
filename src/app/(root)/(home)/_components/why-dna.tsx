@@ -4,8 +4,8 @@ import { cn } from '@/lib/utils';
 
 const WhyDNA = () => {
   return (
-    <section className='bg-[url("/images/background/why-dna.png")] bg-cover bg-center bg-no-repeat'>
-      <div className='container py-32 mx-auto flex flex-col items-stretch justify-between gap-16 min-h-[700px] h-screen relative'>
+    <section className='bg-[url("/images/background/why-dna.png")] bg-cover bg-center bg-no-repeat px-4'>
+      <div className='container py-32 mx-auto flex flex-col items-stretch justify-between gap-16 min-h-[900px] h-screen relative'>
         <div className='ml-36'>
           <div className='bg-clip-text text-transparent bg-gradient-to-r from-[#9CC1C1] to-[#D0DBDB] text-3xl font-black font-neue-machina'>Why DNA</div>
           <div className='bg-clip-text text-transparent bg-gradient-to-r from-[#9CC1C1] to-[#D0DBDB] text-6xl font-black font-neue-machina'>

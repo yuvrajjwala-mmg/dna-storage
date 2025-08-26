@@ -11,8 +11,8 @@ import Image from 'next/image';
 const Atoms = () => {
   const [selectedItem, setSelectedItem] = useState<any>(ATOMS_ACCORDION[0].items[0]);
   return (
-    <section className='bg-[url("/images/background/atoms.png")] bg-cover bg-center bg-no-repeat'>
-      <div className='container py-32 mx-auto flex items-stretch justify-between gap-16 min-h-[700px] h-screen relative'>
+    <section className='bg-[url("/images/background/atoms.png")] bg-cover bg-center bg-no-repeat px-4'>
+      <div className='container py-32 mx-auto flex items-stretch justify-between gap-16 min-h-[900px] h-screen relative'>
         <div className='space-y-16 flex-1'>
           <div className='bg-clip-text text-transparent bg-gradient-to-r from-[#9CC1C1] to-[#D0DBDB] text-8xl font-black font-neue-machina'>
             From atoms
