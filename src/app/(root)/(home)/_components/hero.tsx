@@ -15,8 +15,8 @@ const Hero = () => {
         className='absolute w-full h-full object-center object-cover z-10'
       />
       <Navbar />
-      <div className='py-16 flex-1 flex flex-col items-center px-4'>
-        <div className='container mx-auto flex flex-col items-stretch justify-between gap-16 relative z-20 flex-1 p-10'>
+      <div className='py-8 flex-1 flex flex-col items-center px-4'>
+        <div className='container mx-auto flex flex-col items-stretch justify-between gap-8 lg:gap-10 2xl:gap-16 relative z-20 flex-1 p-10'>
           <div className='absolute top-0 left-0 border-t border-l border-[9CC1C1] w-8 h-8' />
           <div className='text-6xl font-bold text-[#9CC1C1] font-neue-machina'>
             The Future of DATA

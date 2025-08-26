@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 const TheShift = () => {
   return (
-    <section className='bg-[url("/images/background/the-shift.png")] bg-cover bg-center bg-no-repeat flex flex-col justify-between items-stretch gap-24 min-h-[900px] h-screen py-32 px-4'>
+    <section className='bg-[url("/images/background/the-shift.png")] bg-cover bg-center bg-no-repeat flex flex-col justify-between items-stretch gap-24 min-h-[900px] h-screen py-32'>
       <div className='text-center space-y-4 text-[#9CC1C1]'>
         <div className='text-4xl font-black font-neue-machina'>The Shift</div>
         <div className='text-2xl font-neue-machina'>
