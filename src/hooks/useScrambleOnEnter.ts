@@ -9,7 +9,7 @@ type UseScrambleOptions = {
   once?: boolean;
 };
 
-const RANDOM_CHARS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+{}[]<>?/|~';
+const RANDOM_CHARS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
 
 function getRandomChar(): string {
   return RANDOM_CHARS[Math.floor(Math.random() * RANDOM_CHARS.length)];
