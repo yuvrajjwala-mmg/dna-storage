@@ -3,21 +3,29 @@
 import { ATOMS_ACCORDION } from '@/data/atoms-accordion';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Separator } from '@/components/ui/separator';
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
+import { useScrambleOnEnter } from '../../../../hooks/useScrambleOnEnter';
 
 const Atoms = () => {
   const [selectedItem, setSelectedItem] = useState<any>(ATOMS_ACCORDION[0].items[0]);
+  const sectionRef = useRef<HTMLElement | null>(null);
+  const headerLine1Ref = useRef<HTMLDivElement | null>(null);
+  const headerLine2Ref = useRef<HTMLDivElement | null>(null);
+
+  useScrambleOnEnter(sectionRef, [headerLine1Ref, headerLine2Ref]);
   return (
-    <section className='bg-[url("/images/background/atoms.png")] bg-cover bg-center bg-no-repeat px-4'>
+    <section
+      ref={sectionRef}
+      className='bg-[url("/images/background/atoms.png")] bg-cover bg-center bg-no-repeat px-4'
+    >
       <div className='container py-32 mx-auto flex items-stretch justify-between gap-16 min-h-[900px] h-screen relative'>
         <div className='space-y-16 flex-1'>
-          <div className='bg-clip-text text-transparent bg-gradient-to-r from-[#9CC1C1] to-[#D0DBDB] text-8xl font-black font-neue-machina'>
-            From atoms
-            <br />
-            to Ethereum
+          <div className='bg-clip-text text-transparent bg-gradient-to-r from-[#9CC1C1] to-[#D0DBDB] text-6xl font-black font-neue-machina'>
+            <div ref={headerLine1Ref}>From atoms</div>
+            <div ref={headerLine2Ref}>to Ethereum</div>
           </div>
           <Accordion
             type='single'

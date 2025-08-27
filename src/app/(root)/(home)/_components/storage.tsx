@@ -1,10 +1,25 @@
+'use client';
+
 import Image from 'next/image';
+import { useRef } from 'react';
+import { useScrambleOnEnter } from '../../../../hooks/useScrambleOnEnter';
 
 const Storage = () => {
+  const sectionRef = useRef<HTMLElement | null>(null);
+  const headerRef = useRef<HTMLDivElement | null>(null);
+
+  useScrambleOnEnter(sectionRef, [headerRef]);
+
   return (
-    <section className='bg-[url("/images/background/storage.png")] bg-cover bg-center bg-no-repeat px-4'>
+    <section
+      ref={sectionRef}
+      className='bg-[url("/images/background/storage.png")] bg-cover bg-center bg-no-repeat px-4'
+    >
       <div className='container py-32 mx-auto flex items-stretch justify-between gap-16 min-h-[900px] h-screen relative z-0'>
-        <div className='flex flex-col justify-start font-neue-machina text-4xl bg-clip-text text-transparent bg-gradient-to-r from-[#9CC1C1] to-[#D0DBDB] font-black flex-1 relative z-20'>
+        <div
+          ref={headerRef}
+          className='flex flex-col justify-start font-neue-machina text-4xl bg-clip-text text-transparent bg-gradient-to-r from-[#9CC1C1] to-[#D0DBDB] font-black flex-1 relative z-20'
+        >
           The First Physical Key to Molecular Storage
         </div>
         <Image

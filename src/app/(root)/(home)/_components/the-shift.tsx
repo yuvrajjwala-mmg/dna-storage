@@ -1,13 +1,33 @@
+'use client';
+
 import Image from 'next/image';
+import { useRef } from 'react';
+import { useScrambleOnEnter } from '../../../../hooks/useScrambleOnEnter';
 
 const TheShift = () => {
+  const sectionRef = useRef<HTMLElement | null>(null);
+  const titleRef = useRef<HTMLDivElement | null>(null);
+  const subtitleRef = useRef<HTMLDivElement | null>(null);
+
+  useScrambleOnEnter(sectionRef, [titleRef, subtitleRef]);
+
   return (
-    <section className='bg-[url("/images/background/the-shift.png")] bg-cover bg-center bg-no-repeat flex flex-col justify-between items-stretch gap-24 min-h-[900px] h-screen py-32'>
+    <section
+      ref={sectionRef}
+      className='bg-[url("/images/background/the-shift.png")] bg-cover bg-center bg-no-repeat flex flex-col justify-between items-stretch gap-24 min-h-[900px] h-screen py-32'
+    >
       <div className='text-center space-y-4 text-[#9CC1C1]'>
-        <div className='text-4xl font-black font-neue-machina'>The Shift</div>
-        <div className='text-2xl font-neue-machina'>
-          Silicon is reaching its limits.
-          <br />
+        <div
+          ref={titleRef}
+          className='text-4xl font-black font-neue-machina'
+        >
+          The Shift
+        </div>
+        <div
+          ref={subtitleRef}
+          className='text-2xl font-neue-machina'
+        >
+          Silicon is reaching its limits. <br />
           DNA is not.
         </div>
       </div>

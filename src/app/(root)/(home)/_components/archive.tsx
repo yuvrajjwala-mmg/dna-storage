@@ -7,12 +7,17 @@ import { Icon } from '@iconify/react/dist/iconify.js';
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useScrambleOnEnter } from '../../../../hooks/useScrambleOnEnter';
 
 const Archive = () => {
   const sectionRef = useRef<HTMLElement | null>(null);
   const lineRef = useRef<HTMLDivElement | null>(null);
   const bottomLineRef = useRef<HTMLDivElement | null>(null);
   const bottomLineAngleRef = useRef<HTMLDivElement | null>(null);
+  const headerLine1Ref = useRef<HTMLDivElement | null>(null);
+  const headerLine2Ref = useRef<HTMLDivElement | null>(null);
+
+  useScrambleOnEnter(sectionRef, [headerLine1Ref, headerLine2Ref]);
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -76,8 +81,18 @@ const Archive = () => {
     >
       <div className='container py-16 mx-auto flex flex-col items-stretch justify-between gap-8 lg:gap-10 2xl:gap-10 min-h-[900px] h-screen relative'>
         <div className='bg-clip-text text-transparent bg-gradient-to-r from-[#9CC1C1] to-[#D0DBDB] text-6xl font-black font-neue-machina flex-1 w-2/3 mx-auto'>
-          <div className='text-left'>The archive for the</div>
-          <div className='text-right'>next thousand years</div>
+          <div
+            ref={headerLine1Ref}
+            className='text-left'
+          >
+            The archive for the
+          </div>
+          <div
+            ref={headerLine2Ref}
+            className='text-right'
+          >
+            next thousand years
+          </div>
         </div>
         <div className='flex flex-col items-stretch justify-between gap-12'>
           <div className='flex items-center justify-start gap-8 mx-auto w-3/5'>
